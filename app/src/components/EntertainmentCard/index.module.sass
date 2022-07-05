@@ -1,0 +1,47 @@
+.relaxation_item
+    background: rgba(212, 212, 212, 0.2)
+    margin: 1em
+    width: 45%
+    &__wrapper
+        cursor: pointer
+        padding: 1em 2em
+    &:hover
+        transition: 3s
+        background: rgba(212, 212, 212, 0.059)
+        img
+            transform: scale(1.1)
+            opacity: 0.5
+        .relaxation_item__more
+            opacity: 1
+            transition: 2s
+
+    &__title
+        margin: 0.5em 0 
+        text-align: center
+    &__image
+        text-align: center
+        overflow: hidden
+        position: relative
+        cursor: pointer 
+        background: black
+        img
+            transition: 2s
+            width: 100%
+    &__more
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 5
+        opacity: 0
+        h5
+            transition: 2s
+            font-weight: 300
+        
+    &__text
+        text-align: left
+        margin-top: 1em
+        height: 67px
+        overflow: hidden
+
+    

@@ -1,0 +1,29 @@
+@mixin mobile
+    @media screen and (max-width: 990px)
+        .rules_page__header
+            background: none
+body
+    @include mobile  
+
+.rules_page
+    margin-bottom: 5em
+    &__header
+        padding-top: 90px
+        background: rgba(1, 54, 20, 0.338)
+    &__title
+        text-align: center
+        margin: 2em 0
+    &__block
+        position: relative
+        z-index: 5
+.full_image
+    margin: 1.5em 0
+    img
+        width: 100%
+
+.background
+    position: relative
+    z-index: 1
+    margin-top: -192%
+    img
+        width: 100%

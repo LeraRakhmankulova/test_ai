@@ -1,0 +1,49 @@
+@mixin mobile
+    @media screen and (max-width: 990px)
+        .room_page__header
+            background: none
+body
+    @include mobile 
+
+.room_page
+    margin-bottom: 5em
+    &__header
+        padding-top: 90px
+        background: rgba(1, 54, 20, 0.338)
+    &__back
+        width: 100%
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 1 !important
+        margin-top: 9%
+        img
+            opacity: 0.5
+            width: 100%
+
+.title_line
+    display: flex
+    padding: 1.4em 0
+.apartment
+    &__image
+        
+    &__info
+        width: 80%
+    &__title
+        margin: 2em 0
+
+.scale
+    overflow: hidden
+    position: relative
+    cursor: pointerimg
+    img
+        cursor: pointer
+        width: 95% 
+
+.scale img
+    transition: 1.8s
+   
+.scale
+    &:hover
+        img 
+            transform: scale(1.1)

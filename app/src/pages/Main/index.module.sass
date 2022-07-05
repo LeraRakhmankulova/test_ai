@@ -1,0 +1,111 @@
+@mixin mobile
+    @media screen and (max-width: 750px)
+        .welcome_block
+            top: 8em
+            margin: 0 2em
+
+body
+    @include mobile
+
+.slider_component
+    position: relative
+    z-index: 0
+    top: 0
+    left: 0
+
+.welcome_block
+    
+    position: absolute
+    z-index: 2
+    top: 4%
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+.welcome__title
+    
+.welcome
+    &__subtitle
+        padding-top: 0.7em
+.info
+    text-align: right
+    padding: 0.5em 0 3em
+
+    &__text
+        padding-left: 12%
+
+    &__image    
+        &__therapy
+            margin: 1em 0
+            img
+                width: 100%
+            display: flex
+            &__pict2
+                margin-top: 5em
+    &__text_info
+        text-align: left
+        &__block
+            margin-top: -3.5em
+            width: 40%
+            padding: 0 0 2em         
+           
+.full_image
+    img
+        width: 100%
+.text_line
+    display: flex
+    padding: 1.4em 0
+.food
+    text-align: left
+    &__images
+        text-align: center
+        padding: 1.5em 0
+        display: flex
+        justify-content: space-between !important
+    &__image
+        img
+            width: 96%
+.apartments
+    text-align: center
+    &__images
+        padding: 1.5em 0
+        display: flex
+        justify-content: space-between
+        p
+            cursor: pointer
+            color: #dcdadacb
+            transition: 0.5s
+            font-weight: 300
+            font-size: 16px !important
+            &:hover
+                color: #fff
+                transition: 0.5s
+        img
+            width: 96%
+        text-align: left
+
+.main_background
+    position: relative
+    z-index: -1
+    margin-top: -300% 
+    img
+        width: 100%
+
+.scale
+    overflow: hidden
+    position: relative
+    cursor: pointer 
+
+.scale img
+    transition: 2.3s
+   
+.scale
+    &:hover
+        img 
+            transform: scale(1.05)
+
+.news_content
+    background: rgba(180, 193, 173, 0.242)
+    padding: 0.5em 0
+    &__blocks
+        display: flex

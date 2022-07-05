@@ -1,0 +1,38 @@
+@mixin mobile
+    @media screen and (max-width: 990px)
+        .treatment_page__header
+            background: none
+body
+    @include mobile  
+
+.treatment_page
+    margin-bottom: 4em
+    &__header
+        padding-top: 90px
+        background: rgba(1, 54, 20, 0.338)
+        margin-bottom: 2em
+    &__content
+    &__profiles
+        margin: 1em 0
+    &__content
+        position: relative
+        z-index: 5
+.help
+    &__title
+        margin: 2em 0
+        text-align: center
+.items
+    &__blocks
+        display: flex
+        padding: 0
+        margin: 0.5em 0 
+        white-space: nowrap
+        flex-wrap: wrap
+    &__block
+        max-width: 50%
+        background: black
+        img
+            opacity: 0.4
+            width: 100%
+            margin: 0
+            padding: 0

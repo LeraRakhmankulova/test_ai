@@ -1,0 +1,17 @@
+@mixin mobile
+    @media screen and (max-width: 990px)
+        .news_item__header
+            background: none
+body
+    @include mobile  
+.news_item
+    &__header
+        height: 90px
+        background: rgba(1, 54, 20, 0.338)
+        margin-bottom: 2em
+    &__content
+        margin-top: 0.75em
+        img
+            margin: 0 1em 1em 0
+            width: 40%
+            float: left

@@ -1,0 +1,24 @@
+@mixin mobile
+    @media screen and (max-width: 990px)
+        .survey_page__header
+            background: none
+body
+    @include mobile  
+
+.survey_page
+    &__content
+        margin-bottom: 2em
+    &__header
+        padding-top: 90px
+        background: rgba(0, 42, 14, 0.397)
+    &__about
+        margin: 0.5em 0 4em
+        &__image
+            img
+                width: 50%
+                float: left
+                margin: 1em 1em 0.5em 0
+.text_line
+    display: flex
+    padding: 1.4em 0
+    white-space: nowrap
